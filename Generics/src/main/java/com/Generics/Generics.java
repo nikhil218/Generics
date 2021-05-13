@@ -1,6 +1,9 @@
 package com.Generics;
 
+import java.util.Arrays;
+
 public class Generics {
+
     public int maxInteger(Integer number1, Integer number2, Integer number3){
         if(number1.compareTo(number2) > 0 && number1.compareTo(number3) > 0)
             return number1;
@@ -9,4 +12,7 @@ public class Generics {
         else
             return number3;
     }
+
+
+
 }

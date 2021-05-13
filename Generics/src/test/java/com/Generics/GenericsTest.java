@@ -26,4 +26,5 @@ Generics max;
         int result = max.maxInteger(10, 20, 30);
         Assert.assertEquals(30, result);
     }
+
 }
