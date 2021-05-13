@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class Generics {
 
-    public String maxString(String str1, String str2, String str3){
-        if(str1.compareTo(str2) > 0 && str1.compareTo(str3) > 0)
-            return str1;
-        else if(str2.compareTo(str1) > 0 && str2.compareTo(str3) > 0)
-            return str2;
+    public <E extends Comparable<E>> E getMax(E x, E y, E z){
+        if(x.compareTo(y) > 0 && x.compareTo(z) > 0)
+            return x;
+        else if(y.compareTo(x) > 0 && y.compareTo(z) > 0)
+            return y;
         else
-            return str3;
+            return z;
     }
 
 }
