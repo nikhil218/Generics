@@ -46,19 +46,19 @@ Generics max;
     }
 
     @Test
-    public void given_MaxStringat_FirstPosition_Returns_True_Test() {
+    public void given_MaxStringAt_FirstPosition_Returns_True_Test() {
         String result = (String) max.getMax("Peach", "Banana", "Apple");
         Assert.assertEquals("Peach", result);
     }
 
     @Test
-    public void given_MaxStringat_SecondPosition_Returns_True_Test() {
+    public void given_MaxStringAt_SecondPosition_Returns_True_Test() {
         String result = (String) max.getMax("Apple","Peach","Banana");
         Assert.assertEquals("Peach", result);
     }
 
     @Test
-    public void given_MaxStringat_ThirdPosition_Returns_True_Test() {
+    public void given_MaxStringAt_ThirdPosition_Returns_True_Test() {
         String result = (String) max.getMax("Apple", "Peach", "Banana");
         Assert.assertEquals("Peach", result);
     }
