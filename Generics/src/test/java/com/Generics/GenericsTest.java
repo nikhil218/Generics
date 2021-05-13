@@ -10,21 +10,21 @@ Generics max;
     @Before public void set(){max = new Generics();}
 
     @Test
-    public void maxNumberAtFirstPositionTestReturnsTrue(){
-        int result = max.maxInteger(30, 20, 10);
-        Assert.assertEquals(30, result);
+    public void maxDoubleAtFirstPositionTestReturnsTrue() {
+        double result = max.maxDouble(3.5,1.3,2.4);
+        Assert.assertEquals(3.5, result, 0.001);
     }
 
     @Test
-    public void maxNumberAtSecondPositionTestReturnsTrue(){
-        int result = max.maxInteger(20, 30, 10);
-        Assert.assertEquals(30, result);
+    public void maxDoubleAtSecondPositionTestReturnsTrue(){
+        double result = max.maxDouble(1.3,3.5,2.4);
+        Assert.assertEquals(3.5, result, 0.001);
     }
 
     @Test
-    public void maxNumberAtThirdPositionTestReturnsTrue(){
-        int result = max.maxInteger(10, 20, 30);
-        Assert.assertEquals(30, result);
+    public void maxDoubleAtThirdPositionTestReturnsTrue(){
+        double result = max.maxDouble(1.3,2.4,3.5);
+        Assert.assertEquals(3.5, result, 0.001);
     }
 
 }
